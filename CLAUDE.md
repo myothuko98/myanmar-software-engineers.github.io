@@ -87,6 +87,11 @@ When localizing hero sections or large headings with Myanmar text:
 
 Save all screenshots (including Playwright MCP captures) to the `screen-shot/` folder in the project root.
 
+## Git Preferences
+
+- Use `git switch` instead of `git checkout` for branch switching
+- Use `git switch -c <branch>` instead of `git checkout -b <branch>` for creating new branches
+
 ## CI/CD
 
 GitHub Actions (`.github/workflows/build.yml`): on push/PR to `main`, installs with Bun, builds, deploys to GitHub Pages.
