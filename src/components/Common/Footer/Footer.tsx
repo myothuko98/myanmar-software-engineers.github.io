@@ -375,6 +375,15 @@ const Footer = () => {
               >
                 {t("jobs")}
               </FooterLink>
+              <FooterLink
+                href="/how-to-develop-setup"
+                color="#fb7185"
+                index={5}
+                isInView={isInView}
+                mmFont={mmFont}
+              >
+                {t("devSetup")}
+              </FooterLink>
             </nav>
           </div>
 

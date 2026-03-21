@@ -6,7 +6,7 @@ Myanmar Software Engineers (MMSWE) — a community platform showcasing Myanmar s
 
 ## Tech Stack
 
-- **Framework**: Next.js 13.5.4 (App Router, TypeScript, static export)
+- **Framework**: Next.js 16.1.6 (App Router, TypeScript, static export)
 - **Package Manager**: Bun (primary)
 - **Styling**: Tailwind CSS + DaisyUI + Sass
 - **Content**: Contentlayer with MDX (profiles and blogs)
