@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "📖 Dev Setup Guide / Development Setup Guide"
+    url: "https://mmswe.com/how-to-develop-setup"
+    about: "Read this guide before starting development / Development မစခင် ဒီ guide ကို ဖတ်ပါ"
+  - name: "🌐 MMSWE Website"
+    url: "https://mmswe.com"
+    about: "Visit the live site / Website ကို ကြည့်ရှုပါ"

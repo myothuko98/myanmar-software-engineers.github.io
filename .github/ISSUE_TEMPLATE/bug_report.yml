@@ -1,0 +1,116 @@
+name: "🐛 Bug Report / Bug Report (MM)"
+description: "Report a bug to help us improve | Bug တစ်ခု တွေ့ရှိပါက report လုပ်ပါ"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📖 Before You Start / မစခင် ဖတ်ပါ
+
+        > **🇬🇧 EN:** Please read the **[Development Setup Guide](https://mmswe.com/how-to-develop-setup)** before setting up the project locally.
+        >
+        > **🇲🇲 MM:** Project ကို local မှာ setup မလုပ်ခင် **[Development Setup Guide](https://mmswe.com/how-to-develop-setup)** ကို ဖတ်ပါ။
+
+        ---
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description / Bug ဖော်ပြချက်"
+      description: "A clear and concise description of the bug / Bug အကြောင်း ရှင်းလင်းစွာ ဖော်ပြပါ"
+      placeholder: "Tell us what happened / ဘာဖြစ်သွားလဲ ပြောပြပါ"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Steps to Reproduce / ပြန်လည် ဖြစ်စေရန် အဆင့်များ"
+      description: "Steps to reproduce the behavior / Bug ကို ပြန်ဖြစ်အောင် လုပ်ရမည့် အဆင့်များ"
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior / မျှော်လင့်ထားသော Behavior"
+      description: "What did you expect to happen? / ဘာဖြစ်မယ်လို့ မျှော်လင့်ထားသလဲ?"
+      placeholder: "I expected... / ကျွန်တော် မျှော်လင့်ထားတာက..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: "Browser / Browser"
+      description: "Which browser are you using? / ဘယ် browser ကို သုံးနေသလဲ?"
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating System / Operating System"
+      description: "Which OS are you using? / ဘယ် OS ကို သုံးနေသလဲ?"
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - iOS
+        - Android
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: "Device Type / Device အမျိုးအစား"
+      description: "What type of device? / ဘယ် device အမျိုးအစားလဲ?"
+      options:
+        - Desktop
+        - Tablet
+        - Mobile
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots / Screenshots"
+      description: "If applicable, add screenshots / Screenshots ရှိလျှင် ထည့်ပါ"
+      placeholder: "Drag and drop images here / ဓာတ်ပုံများကို ဒီမှာ ဆွဲထည့်ပါ"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Context / နောက်ထပ် အချက်အလက်များ"
+      description: "Any other context about the problem / ပြဿနာနှင့် ပတ်သက်သော အခြား အချက်အလက်များ"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist / စစ်ဆေးချက်"
+      options:
+        - label: "I have read the [Dev Setup Guide](https://mmswe.com/how-to-develop-setup) / [Dev Setup Guide](https://mmswe.com/how-to-develop-setup) ကို ဖတ်ပြီးပါပြီ"
+          required: true
+        - label: "I have searched for existing issues / ရှိပြီးသား issues များကို ရှာပြီးပါပြီ"
+          required: true

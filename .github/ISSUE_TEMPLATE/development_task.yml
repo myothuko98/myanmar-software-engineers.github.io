@@ -1,0 +1,102 @@
+name: "🛠️ Development Task / Development Task (MM)"
+description: "Submit a development task | Development task တစ်ခု တင်ပါ"
+title: "[Dev]: "
+labels: ["development"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📖 Before You Start / မစခင် ဖတ်ပါ
+
+        > **🇬🇧 EN:** Before starting development, please read the **[Development Setup Guide](https://mmswe.com/how-to-develop-setup)** to set up your local environment (Firebase, Bun, env variables, etc.).
+        >
+        > **🇲🇲 MM:** Development မစခင် **[Development Setup Guide](https://mmswe.com/how-to-develop-setup)** ကို ဖတ်ပြီး local environment (Firebase, Bun, env variables, etc.) ကို setup လုပ်ပါ။
+
+        ---
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description / ဖော်ပြချက်"
+      description: "Describe what needs to be developed / ဘာကို develop လုပ်ရမလဲ ဖော်ပြပါ"
+      placeholder: "This task involves... / ဒီ task မှာ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: "Requirements / လိုအပ်ချက်များ"
+      description: "List the requirements or acceptance criteria / လိုအပ်ချက်များ သို့မဟုတ် acceptance criteria များကို စာရင်းပြုပါ"
+      placeholder: |
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category / အမျိုးအစား"
+      description: "What area does this task relate to? / ဒီ task က ဘယ်နယ်ပယ်နဲ့ ဆိုင်သလဲ?"
+      options:
+        - "Profile / Profile"
+        - "Blog / Blog"
+        - "Jobs / Jobs"
+        - "UI/UX"
+        - "Performance"
+        - "i18n / Localization"
+        - "Infrastructure / CI/CD"
+        - "Other / အခြား"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority / ဦးစားပေး"
+      description: "How urgent is this task? / ဒီ task က ဘယ်လောက် အရေးတကြီး လိုအပ်သလဲ?"
+      options:
+        - "Low / နိမ့် — Nice to have"
+        - "Medium / အလယ် — Should be done soon"
+        - "High / မြင့် — Urgent"
+    validations:
+      required: true
+
+  - type: textarea
+    id: related
+    attributes:
+      label: "Related Pages or Components / ဆက်စပ်သော Pages သို့မဟုတ် Components"
+      description: "Which pages/components are affected? / ဘယ် pages/components တွေ ပါဝင်သလဲ?"
+      placeholder: "e.g. src/app/blog, src/components/Profile"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots / Design References"
+      description: "Add mockups, screenshots, or design references if available / Mockups, screenshots, design references များ ရှိလျှင် ထည့်ပါ"
+      placeholder: "Drag and drop images here / ဓာတ်ပုံများကို ဒီမှာ ဆွဲထည့်ပါ"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Context / နောက်ထပ် အချက်အလက်များ"
+      description: "Any other context about this task / ဒီ task နှင့် ပတ်သက်သော အခြား အချက်အလက်များ"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Setup Checklist / Setup စစ်ဆေးချက်"
+      options:
+        - label: "I have read the [Dev Setup Guide](https://mmswe.com/how-to-develop-setup) / [Dev Setup Guide](https://mmswe.com/how-to-develop-setup) ကို ဖတ်ပြီးပါပြီ"
+          required: true
+        - label: "I have set up Firebase locally / Firebase ကို local မှာ setup လုပ်ပြီးပါပြီ"
+          required: false
+        - label: "I can run `bun dev` successfully / `bun dev` အောင်မြင်စွာ run နိုင်ပါပြီ"
+          required: false

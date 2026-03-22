@@ -1,0 +1,97 @@
+name: "✨ Feature Request / Feature Request (MM)"
+description: "Suggest a new feature or improvement | Feature အသစ် သို့မဟုတ် improvement တစ်ခု အဆိုပြုပါ"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📖 Before You Start / မစခင် ဖတ်ပါ
+
+        > **🇬🇧 EN:** Please read the **[Development Setup Guide](https://mmswe.com/how-to-develop-setup)** before setting up the project locally.
+        >
+        > **🇲🇲 MM:** Project ကို local မှာ setup မလုပ်ခင် **[Development Setup Guide](https://mmswe.com/how-to-develop-setup)** ကို ဖတ်ပါ။
+
+        ---
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem Statement / ပြဿနာ ဖော်ပြချက်"
+      description: "Is this related to a problem? / ဒါက ပြဿနာတစ်ခုနဲ့ ဆက်စပ်သလား?"
+      placeholder: "I'm always frustrated when... / ကျွန်တော် အမြဲ စိတ်ပျက်ရတာက..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Solution / အဆိုပြု ဖြေရှင်းချက်"
+      description: "Describe the solution you'd like / သင် လိုချင်သော ဖြေရှင်းချက်ကို ဖော်ပြပါ"
+      placeholder: "I would like... / ကျွန်တော် လိုချင်တာက..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered / စဉ်းစားခဲ့သော အခြား နည်းလမ်းများ"
+      description: "Describe any alternatives you've considered / စဉ်းစားခဲ့သော အခြား ဖြေရှင်းချက်များ ဖော်ပြပါ"
+      placeholder: "I also considered... / ကျွန်တော် စဉ်းစားခဲ့တာက..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Feature Category / Feature အမျိုးအစား"
+      description: "What area does this feature relate to? / ဒီ feature က ဘယ်နယ်ပယ်နဲ့ ဆိုင်သလဲ?"
+      options:
+        - "Profile / Profile"
+        - "Blog / Blog"
+        - "Jobs / Jobs"
+        - "UI/UX"
+        - "Performance"
+        - "i18n / Localization"
+        - "Other / အခြား"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority / ဦးစားပေး"
+      description: "How important is this feature? / ဒီ feature က ဘယ်လောက် အရေးကြီးသလဲ?"
+      options:
+        - "Low / နိမ့် — Nice to have"
+        - "Medium / အလယ် — Would improve experience"
+        - "High / မြင့် — Significantly needed"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots / Design References"
+      description: "Add mockups, screenshots, or design references / Mockups, screenshots, design references များ ထည့်ပါ"
+      placeholder: "Drag and drop images here / ဓာတ်ပုံများကို ဒီမှာ ဆွဲထည့်ပါ"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Context / နောက်ထပ် အချက်အလက်များ"
+      description: "Any other context or information / အခြား အချက်အလက်များ"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist / စစ်ဆေးချက်"
+      options:
+        - label: "I have read the [Dev Setup Guide](https://mmswe.com/how-to-develop-setup) / [Dev Setup Guide](https://mmswe.com/how-to-develop-setup) ကို ဖတ်ပြီးပါပြီ"
+          required: true
+        - label: "I have searched for existing issues / ရှိပြီးသား issues များကို ရှာပြီးပါပြီ"
+          required: true
